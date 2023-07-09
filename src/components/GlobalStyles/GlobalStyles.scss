@@ -187,6 +187,7 @@ input {
 
 a {
     color: var(--text-color);
+    line-height: 1.1;
     text-decoration: none;
 }
 
@@ -196,6 +197,5 @@ img {
 }
 
 button {
-    cursor: pointer;
     padding: 0;
 }

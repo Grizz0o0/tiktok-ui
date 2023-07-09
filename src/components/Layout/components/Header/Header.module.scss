@@ -112,42 +112,9 @@
     align-items: center;
     gap: 16px;
 
-    button {
-        min-width: 100px;
-        padding: 8px 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        font-size: 1.6rem;
-        font-weight: 600;
-        background-color: transparent;
-        border: 1px solid rgba(22, 24, 35, 0.12);
-        border-radius: 4px;
-        transition: 0.2s;
-
-        &:hover {
-            background-color: rgba(22, 24, 35, 0.03);
-        }
-    }
-
     .more {
         font-size: 2.6rem;
         margin: 0 4px;
         cursor: pointer;
-    }
-
-    .login {
-        background-color: var(--primary-color);
-        color: #fff;
-        border-color: transparent;
-        &:hover {
-            background: linear-gradient(
-                    0deg,
-                    rgba(0, 0, 0, 0.06),
-                    rgba(0, 0, 0, 0.06)
-                ),
-                #fe2c55;
-        }
     }
 }
