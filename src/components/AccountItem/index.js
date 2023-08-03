@@ -1,26 +1,29 @@
 import classNames from "classnames/bind";
 import styles from "./AccountItem.module.scss";
 import { AiFillCheckCircle } from "react-icons/ai";
+import Image from "../Image";
+import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const cx = classNames.bind(styles);
 
-function AccountItem() {
+function AccountItem({ data }) {
     return (
-        <div className={cx("wrapper")}>
-            <img
-                className={cx("avatar")}
-                src='https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/122b95d1cd9bd6f885598a039dc6b74d~c5_300x300.webp?x-expires=1688824800&x-signature=M8%2Fg5pwqnuJp3sGIAfoePZ7smm8%3D'
-                alt='avatar'
-            />
+        <Link to={`/@${data.nickname}`} className={cx("wrapper")}>
+            <Image className={cx("avatar")} src={data.avatar} alt='avatar' />
             <div className={cx("info")}>
                 <p className={cx("name")}>
-                    <span>Nguyen Van A</span>{" "}
-                    <AiFillCheckCircle className={cx("check")} />
+                    <span>{data.full_name}</span>
+                    {data.tick && <AiFillCheckCircle className={cx("check")} />}
                 </p>
-                <span className={cx("username")}>NguyenVanA</span>
+                <span className={cx("username")}>{data.nickname}</span>
             </div>
-        </div>
+        </Link>
     );
 }
+
+AccountItem.propTypes = {
+    data: PropTypes.object.isRequired,
+};
 
 export default AccountItem;
