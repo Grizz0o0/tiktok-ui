@@ -8,7 +8,7 @@ import { useDebounce } from "~/hooks";
 import HeadlessTippy from "@tippyjs/react/headless";
 import { Wrapper as PopperWrapper } from "~/components/Popper";
 import AccountItem from "~/components/AccountItem";
-import { IoSearchOutline } from "react-icons/io5";
+import { SearchIcon } from "~/components/Icon";
 import { MdClear } from "react-icons/md";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
@@ -103,7 +103,7 @@ function Search() {
                     <button
                         className={cx("search-btn")}
                         onMouseDown={(e) => e.preventDefault()}>
-                        <IoSearchOutline />
+                        <SearchIcon width='2.4rem' height='2.4rem' />
                     </button>
                 </div>
             </HeadlessTippy>

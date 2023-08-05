@@ -10,18 +10,28 @@ import Image from "~/components/Image";
 import { Link } from "react-router-dom";
 import routes from "~/configs/routes";
 
-import { Massages, Inbox } from "~/components/Icon";
-import { IoLanguage } from "react-icons/io5";
-import { IoMdAdd, IoMdHelpCircleOutline } from "react-icons/io";
-import { MdOutlineKeyboard, MdDarkMode } from "react-icons/md";
-import { AiOutlineMore } from "react-icons/ai";
+import {
+    MassagesIcon,
+    InboxIcon,
+    UserIcon,
+    FavoritesIcon,
+    CoinsIcon,
+    SettingsIcon,
+    LanguageIcon,
+    HelpIcon,
+    KeyboardIcon,
+    DarkModeIcon,
+    LogOutIcon,
+    PlusIcon,
+    MoreIcon,
+} from "~/components/Icon";
 
 const cx = classNames.bind(styles);
 const currentUser = true;
 
 const MENU_ITEMS = [
     {
-        icon: <IoLanguage />,
+        icon: <LanguageIcon width='2rem' height='2rem' />,
         title: "English",
         children: {
             title: "Language",
@@ -110,44 +120,44 @@ const MENU_ITEMS = [
         },
     },
     {
-        icon: <IoMdHelpCircleOutline />,
+        icon: <HelpIcon width='2rem' height='2rem' />,
         title: "Feedback and help",
         to: "/feedback",
     },
     {
-        icon: <MdOutlineKeyboard />,
+        icon: <KeyboardIcon width='2rem' height='2rem' />,
         title: "Keyboard shortcuts",
     },
     {
-        icon: <MdDarkMode />,
+        icon: <DarkModeIcon width='2rem' height='2rem' />,
         title: "Dark mode",
     },
 ];
 
 const userMenu = [
     {
-        icon: <IoMdHelpCircleOutline />,
+        icon: <UserIcon width='2rem' height='2rem' />,
         title: "View profile",
         to: "/@hooa",
     },
     {
-        icon: <IoMdHelpCircleOutline />,
+        icon: <FavoritesIcon width='2rem' height='2rem' />,
         title: "Favorites",
         to: "/favorites",
     },
     {
-        icon: <IoMdHelpCircleOutline />,
+        icon: <CoinsIcon width='2rem' height='2rem' />,
         title: "Get Coins",
         to: "/coin",
     },
     {
-        icon: <IoMdHelpCircleOutline />,
+        icon: <SettingsIcon width='2rem' height='2rem' />,
         title: "Settings",
         to: "/settings",
     },
     ...MENU_ITEMS,
     {
-        icon: <IoMdHelpCircleOutline />,
+        icon: <LogOutIcon width='2rem' height='2rem' />,
         title: "Log out",
         to: "/logout",
         separate: true,
@@ -185,33 +195,44 @@ function Header() {
                         <>
                             <Button
                                 to={routes.upload}
-                                leftIcon={<IoMdAdd />}
+                                leftIcon={
+                                    <PlusIcon width='2rem' height='2rem' />
+                                }
                                 className={cx("upload")}>
                                 <span>Upload</span>
                             </Button>
-                            <Tippy
-                                interactive
-                                delay={[0, 50]}
-                                content='Message'
-                                placement='bottom'>
-                                <button className={cx("action-btn")}>
-                                    <Massages width='2.5rem' height='2.5rem' />
-                                </button>
-                            </Tippy>
-                            <Tippy
-                                interactive
-                                delay={[0, 50]}
-                                content='Inbox'
-                                placement='bottom'>
-                                <button className={cx("action-btn")}>
-                                    <Inbox />
-                                </button>
-                            </Tippy>
+                            <div>
+                                <Tippy
+                                    interactive
+                                    delay={[0, 50]}
+                                    content='Message'
+                                    placement='bottom'>
+                                    <button className={cx("action-btn")}>
+                                        <MassagesIcon
+                                            width='2.5rem'
+                                            height='2.5rem'
+                                        />
+                                    </button>
+                                </Tippy>
+                            </div>
+                            <div>
+                                <Tippy
+                                    interactive
+                                    delay={[0, 50]}
+                                    content='Inbox'
+                                    placement='bottom'>
+                                    <button className={cx("action-btn")}>
+                                        <InboxIcon />
+                                    </button>
+                                </Tippy>
+                            </div>
                         </>
                     ) : (
                         <>
                             <Button
-                                leftIcon={<IoMdAdd />}
+                                leftIcon={
+                                    <PlusIcon width='2rem' height='2rem' />
+                                }
                                 className={cx("upload")}>
                                 <span>Upload</span>
                             </Button>
@@ -237,7 +258,7 @@ function Header() {
                                 </div>
                             ) : (
                                 <button className={cx("more")}>
-                                    <AiOutlineMore />
+                                    <MoreIcon width='2rem' height='2rem' />
                                 </button>
                             )}
                         </Menu>
