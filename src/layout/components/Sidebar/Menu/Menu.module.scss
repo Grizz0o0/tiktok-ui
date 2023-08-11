@@ -9,7 +9,6 @@
 
     &.active {
         color: var(--primary-color);
-        background: rgba(22, 24, 35, 0.03);
     }
 
     &:hover {
@@ -18,8 +17,8 @@
 }
 
 .title {
-    font-weight: 600;
-    font-size: 1.8rem;
+    font-weight: 700;
+    font-size: 1.9rem;
     line-height: 24px;
     letter-spacing: -0.028px;
     margin-left: 8px;

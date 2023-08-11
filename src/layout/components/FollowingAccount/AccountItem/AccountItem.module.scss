@@ -1,19 +1,31 @@
 .wrapper {
-    padding: 9px 16px;
-    cursor: pointer;
+    padding: 6px 8px;
     display: flex;
     align-items: center;
+    border-radius: 4px;
+    transition: background 200ms ease-in-out 0s;
 
     &:hover {
         background: rgba(22, 24, 35, 0.03);
     }
 }
 
+.clip-text {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.break {
+    word-wrap: break-word;
+}
+
 .avatar {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     object-fit: cover;
+    flex-shrink: 0;
 }
 
 .info {
@@ -24,7 +36,6 @@
     color: rgb(22, 24, 35);
     font-size: 1.6rem;
     font-weight: 600;
-    line-height: 21px;
     letter-spacing: 0.03px;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -37,11 +48,8 @@
 
 .username {
     font-size: 1.4rem;
-    line-height: 18px;
     letter-spacing: 0.093px;
     color: rgba(22, 24, 35, 0.5);
-    font-weight: 400;
-    overflow: hidden;
+    font-weight: 500;
     text-overflow: ellipsis;
-    white-space: nowrap;
 }

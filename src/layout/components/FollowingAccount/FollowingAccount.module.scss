@@ -1,0 +1,26 @@
+.wrapper {
+    padding: 16px 0px;
+}
+
+.title {
+    padding: 0px 8px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 18px;
+    color: rgba(22, 24, 35, 0.75);
+    letter-spacing: 0.093px;
+}
+
+.more {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 18px;
+    letter-spacing: 0.093px;
+    border: none;
+    padding: 0px 8px;
+    margin-top: 8px;
+    background: transparent;
+    cursor: pointer;
+}

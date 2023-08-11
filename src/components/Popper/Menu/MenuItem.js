@@ -2,6 +2,7 @@ import classNames from "classnames/bind";
 import styles from "./Menu.module.scss";
 import Button from "~/components/Button";
 import PropTypes from "prop-types";
+import ToggleButton from "~/components/ToggleButton";
 
 const cx = classNames.bind(styles);
 
@@ -16,6 +17,7 @@ function MenuItem({ data, onClick }) {
             to={data.to}
             onClick={onClick}>
             {data.title}
+            {data.toggleButton ? <ToggleButton /> : <span></span>}
         </Button>
     );
 }

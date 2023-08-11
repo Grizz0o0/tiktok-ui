@@ -4,7 +4,11 @@
     --primary-color: rgba(254, 44, 85, 0.9);
     --text-color: rgba(22, 24, 35, 1);
     --icon-color: rgba(22, 24, 35, 0.34);
-    --icon-color-hover: rgba(22, 24, 35, 1);
+    --icon-color-hover: rgba(22, 24, 35, 0.75);
+    --white-color: rgba(255, 255, 255, 1);
+    --dark-color: rgba(18, 18, 18, 1);
+    --header-height: 60px;
+    --sidebar-width: 232px;
 }
 
 // Reset CSS
@@ -228,7 +232,7 @@ body {
     .tippy-box {
         border-radius: 8px;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 1.6rem;
         line-height: 21px;
         letter-spacing: 0.03px;
         background-color: rgba(84, 84, 84, 0.92);

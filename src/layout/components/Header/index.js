@@ -131,6 +131,7 @@ const MENU_ITEMS = [
     {
         icon: <DarkModeIcon width='2rem' height='2rem' />,
         title: "Dark mode",
+        toggleButton: true,
     },
 ];
 

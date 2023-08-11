@@ -1,6 +1,7 @@
 import styles from "./DefaultLayout.module.scss";
 import classNames from "classnames/bind";
-
+import GetApp from "~/components/GetApp";
+import ScrollTop from "~/components/ScrollTop";
 import Header from "~/layout/components/Header";
 import Sidebar from "~/layout/components/Sidebar";
 
@@ -13,6 +14,10 @@ function DefaultLayout({ children }) {
             <div className={cx("container")}>
                 <Sidebar />
                 <div className={cx("content")}>{children}</div>
+                <div className={cx("bottom-container")}>
+                    <GetApp />
+                    <ScrollTop />
+                </div>
             </div>
         </div>
     );
