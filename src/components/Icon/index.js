@@ -520,3 +520,169 @@ export const ScrollTopIcon = ({
         <path d='M4.5 7.5C4.5 5.84315 5.84315 4.5 7.5 4.5L40.5 4.5C42.1569 4.5 43.5 5.84315 43.5 7.5C43.5 9.15685 42.1569 10.5 40.5 10.5L7.5 10.5C5.84315 10.5 4.5 9.15685 4.5 7.5Z'></path>
     </svg>
 );
+
+export const MusicIcon = ({
+    className,
+    width = "3.2rem",
+    height = "3.2rem",
+}) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 512 512'>
+        <path
+            d='M192 218v-6c0-14.84 10-27 24.24-30.59l174.59-46.68A20 20 0 01416 154v22'
+            fill='currentColor'
+            stroke='currentColor'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+            strokeWidth='32'
+        />
+        <path
+            d='M416 295.94v80c0 13.91-8.93 25.59-22 30l-22 8c-25.9 8.72-52-10.42-52-38h0a33.37 33.37 0 0123-32l51-18.15c13.07-4.4 22-15.94 22-29.85V58a10 10 0 00-12.6-9.61L204 102a16.48 16.48 0 00-12 16v226c0 13.91-8.93 25.6-22 30l-52 18c-13.88 4.68-22 17.22-22 32h0c0 27.58 26.52 46.55 52 38l22-8c13.07-4.4 22-16.08 22-30v-80'
+            fill='none'
+            stroke='currentColor'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+            strokeWidth='32'
+        />
+    </svg>
+);
+
+export const LikeIcon = ({
+    className,
+    width = "3.2rem",
+    height = "3.2rem",
+}) => (
+    <svg
+        xmlns='http://www.w3.org/2000/svg'
+        className={className}
+        width={width}
+        height={height}
+        fill='currentColor'
+        viewBox='0 0 512 512'>
+        <path d='M256 448a32 32 0 01-18-5.57c-78.59-53.35-112.62-89.93-131.39-112.8-40-48.75-59.15-98.8-58.61-153C48.63 114.52 98.46 64 159.08 64c44.08 0 74.61 24.83 92.39 45.51a6 6 0 009.06 0C278.31 88.81 308.84 64 352.92 64c60.62 0 110.45 50.52 111.08 112.64.54 54.21-18.63 104.26-58.61 153-18.77 22.87-52.8 59.45-131.39 112.8a32 32 0 01-18 5.56z' />
+    </svg>
+);
+
+export const CommentIcon = ({
+    className,
+    width = "3.2rem",
+    height = "3.2rem",
+}) => (
+    <svg
+        xmlns='http://www.w3.org/2000/svg'
+        className={className}
+        width={width}
+        height={height}
+        fill='currentColor'
+        viewBox='0 0 512 512'>
+        <path d='M398 81.84A227.4 227.4 0 00255.82 32C194.9 32 138 55.47 95.46 98.09 54.35 139.33 31.82 193.78 32 251.37a215.66 215.66 0 0035.65 118.76l.19.27c.28.41.57.82.86 1.22s.65.92.73 1.05l.22.4c1.13 2 2 4.44 1.23 6.9l-18.42 66.66a29.13 29.13 0 00-1.2 7.63A25.69 25.69 0 0076.83 480a29.44 29.44 0 0010.45-2.29l67.49-24.36.85-.33a14.75 14.75 0 015.8-1.15 15.12 15.12 0 015.37 1c1.62.63 16.33 6.26 31.85 10.6 12.9 3.6 39.74 9 60.77 9 59.65 0 115.35-23.1 156.83-65.06C457.36 365.77 480 310.42 480 251.49a213.5 213.5 0 00-4.78-45c-10.34-48.62-37.76-92.9-77.22-124.65zM87.48 380zM160 288a32 32 0 1132-32 32 32 0 01-32 32zm96 0a32 32 0 1132-32 32 32 0 01-32 32zm96 0a32 32 0 1132-32 32 32 0 01-32 32z' />
+    </svg>
+);
+
+export const FavoriteIcon = ({
+    className,
+    width = "3.2rem",
+    height = "3.2rem",
+}) => (
+    <svg
+        xmlns='http://www.w3.org/2000/svg'
+        className={className}
+        width={width}
+        height={height}
+        fill='currentColor'
+        viewBox='0 0 512 512'>
+        <path d='M400 480a16 16 0 01-10.63-4L256 357.41 122.63 476A16 16 0 0196 464V96a64.07 64.07 0 0164-64h192a64.07 64.07 0 0164 64v368a16 16 0 01-16 16z' />
+    </svg>
+);
+
+export const ShareIcon = ({
+    className,
+    width = "3.2rem",
+    height = "3.2rem",
+}) => (
+    <svg
+        xmlns='http://www.w3.org/2000/svg'
+        className={className}
+        width={width}
+        height={height}
+        fill='currentColor'
+        viewBox='0 0 512 512'>
+        <path d='M48 399.26C48 335.19 62.44 284 90.91 247c34.38-44.67 88.68-68.77 161.56-71.75V72L464 252 252.47 432V329.35c-44.25 1.19-77.66 7.58-104.27 19.84-28.75 13.25-49.6 33.05-72.08 58.7L48 440z' />
+    </svg>
+);
+
+export const PlayIcon = ({
+    className,
+    width = "3.2rem",
+    height = "3.2rem",
+}) => (
+    <svg
+        xmlns='http://www.w3.org/2000/svg'
+        className={className}
+        width={width}
+        height={height}
+        fill='currentColor'
+        viewBox='0 0 512 512'>
+        <path d='M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z' />
+    </svg>
+);
+
+export const PauseIcon = ({
+    className,
+    width = "3.2rem",
+    height = "3.2rem",
+}) => (
+    <svg
+        xmlns='http://www.w3.org/2000/svg'
+        className={className}
+        width={width}
+        height={height}
+        fill='currentColor'
+        viewBox='0 0 512 512'>
+        <path d='M208 432h-48a16 16 0 01-16-16V96a16 16 0 0116-16h48a16 16 0 0116 16v320a16 16 0 01-16 16zM352 432h-48a16 16 0 01-16-16V96a16 16 0 0116-16h48a16 16 0 0116 16v320a16 16 0 01-16 16z' />
+    </svg>
+);
+
+export const VolumeIcon = ({
+    className,
+    width = "3.2rem",
+    height = "3.2rem",
+}) => (
+    <svg
+        xmlns='http://www.w3.org/2000/svg'
+        className={className}
+        width={width}
+        height={height}
+        viewBox='0 0 512 512'>
+        <path
+            d='M157.65 192H88a8 8 0 00-8 8v112a8 8 0 008 8h69.65a16 16 0 0110.14 3.63l91.47 75a8 8 0 0012.74-6.46V119.83a8 8 0 00-12.74-6.44l-91.47 75a16 16 0 01-10.14 3.61zM352 320c9.74-19.41 16-40.81 16-64 0-23.51-6-44.4-16-64M400 368c19.48-34 32-64 32-112s-12-77.7-32-112'
+            fill='currentColor'
+            stroke='currentColor'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+            strokeWidth='32'
+        />
+    </svg>
+);
+
+export const MoreHorizontalIcon = ({
+    className,
+    width = "3.2rem",
+    height = "3.2rem",
+}) => (
+    <svg
+        xmlns='http://www.w3.org/2000/svg'
+        className={className}
+        width={width}
+        height={height}
+        fill='currentColor'
+        viewBox='0 0 512 512'>
+        <circle cx='256' cy='256' r='48' />
+        <circle cx='416' cy='256' r='48' />
+        <circle cx='96' cy='256' r='48' />
+    </svg>
+);
