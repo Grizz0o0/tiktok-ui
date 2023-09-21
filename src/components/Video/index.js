@@ -18,7 +18,8 @@ function Video({ data = {} }) {
                 poster={data.thumb_url}
                 autoPlay
                 loop
-                controls></video>
+                controls
+            ></video>
 
             {/* <div className={cx("btn")}>
                 <div className={cx("play-btn")}>

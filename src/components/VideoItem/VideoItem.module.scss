@@ -96,9 +96,9 @@
 }
 
 .video-container {
+    margin-top: 12px;
     display: flex;
     width: 100%;
-    height: calc(450px + (100vw - 768px) / 1152 * 200);
 }
 
 .container-active {

@@ -2,7 +2,7 @@ import * as request from "~/untils/httpRequest";
 
 export const following = async (page, perPage) => {
     try {
-        const res = await request.get("users/suggested", {
+        const res = await request.get("users/`suggested`", {
             params: {
                 page,
                 per_page: perPage,
